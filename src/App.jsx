@@ -11,9 +11,23 @@ import UsuarioInfoElse from './componets/condicional/UsuarioInfoElse';
 import DiretaPai from './componets/comunicacao/DiretaPai';
 import IndiretaPai from './componets/comunicacao/IndiretaPai';
 import Input from './componets/controlado/Input';
+import StateEffects from './componets/hooks/StateEffects';
+import UseRef from './componets/hooks/UseRef';
+import UseMemo from './componets/hooks/UseMemo';
+import UseCallback from './componets/hooks/UseCallback';
 
 export default () => (
     <div>
+        <UseCallback></UseCallback>
+
+        <UseMemo/>
+
+        <UseRef/>
+
+        <StateEffects></StateEffects>
+
+
+
         <Input/>
 
         <IndiretaPai></IndiretaPai>
