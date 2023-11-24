@@ -1,3 +1,5 @@
+import { stringParaData } from "@/utils/converters";
+
 export default class Evento {
     id: number | null;
     nome: string;
@@ -12,6 +14,10 @@ export default class Evento {
         this.data = data;
         this.descricao = descricao;
         this.status = status;
+    }
+
+    static vazio(): Evento {
+      return new Evento(null, "", stringParaData(""), "", "")
     }
 
     static geraEventosMock() {
